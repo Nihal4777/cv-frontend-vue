@@ -35,6 +35,7 @@ import SevenSegDisplay from './modules/SevenSegDisplay'
 import SixteenSegDisplay from './modules/SixteenSegDisplay'
 import Splitter from './modules/Splitter'
 import SquareRGBLed from './modules/SquareRGBLed'
+import SerialInput from '#/simulator/src/modules/SerialInput'
 import Stepper from './modules/Stepper'
 import Text from './modules/Text'
 import TriState from './modules/TriState'
@@ -130,6 +131,7 @@ export default function setupModules() {
         TB_Input,
         TB_Output,
         ForceGate,
+        SerialInput
     }
     Object.assign(modules, moduleSet)
 }

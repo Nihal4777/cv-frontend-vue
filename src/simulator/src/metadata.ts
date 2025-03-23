@@ -60,7 +60,8 @@ export const circuitElementList = [
     "Dlatch",
     "TB_Input",
     "TB_Output",
-    "ForceGate"
+    "ForceGate",
+    "SerialInput"
 ]
 const annotationList = ["Text", "Rectangle", "Arrow", "ImageAnnotation"]
 export const moduleList = [...circuitElementList, ...annotationList]
@@ -86,7 +87,8 @@ export const inputList = [
     "Input",
     "Clock",
     "Button",
-    "Counter"
+    "Counter",
+    "SerialInput"
 ]
 export const subCircuitInputList = [
     "Random",
@@ -102,7 +104,8 @@ export const subCircuitInputList = [
     "ConstantVal",
     "Clock",
     "Button",
-    "Counter"
+    "Counter",
+    "SerialInput"
 ]
 interface NameLabel {
     name: string;
@@ -118,7 +121,8 @@ export const elementHierarchy: Record<string, NameLabel[]> = {
         { name: "ConstantVal", label: "Constant Value" },
         { name: "Stepper", label: "Stepper" },
         { name: "Random", label: "Random" },
-        { name: "Counter", label: "Counter" }
+        { name: "Counter", label: "Counter" },
+        { name: "SerialInput", label: "SerialInput" },
     ],
     "Output": [
         { name: "Output", label: "Output" },
