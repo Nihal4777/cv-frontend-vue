@@ -61,7 +61,10 @@ export const circuitElementList = [
     "TB_Input",
     "TB_Output",
     "ForceGate",
-    "SerialInput"
+    "SerialInput",
+    "Shifter",
+    "Comparator",
+    "PullResistor"
 ]
 const annotationList = ["Text", "Rectangle", "Arrow", "ImageAnnotation"]
 export const moduleList = [...circuitElementList, ...annotationList]
@@ -88,7 +91,9 @@ export const inputList = [
     "Clock",
     "Button",
     "Counter",
-    "SerialInput"
+    "SerialInput",
+    "Comparator",
+    "PullResistor"
 ]
 export const subCircuitInputList = [
     "Random",
@@ -105,7 +110,10 @@ export const subCircuitInputList = [
     "Clock",
     "Button",
     "Counter",
-    "SerialInput"
+    "SerialInput",
+    "Shifter",
+    "Comparator",
+    "PullResistor"
 ]
 interface NameLabel {
     name: string;
@@ -165,7 +173,8 @@ export const elementHierarchy: Record<string, NameLabel[]> = {
         { name: "Rom", label: "ROM" },
         { name: "RAM", label: "RAM" },
         { name: "verilogRAM", label: "Verilog RAM" },
-        { name: "EEPROM", label: "EEPROM" }
+        { name: "EEPROM", label: "EEPROM" },
+        { name: "Shifter", label: "Shifter" }
     ],
     "Annotation": [
         { name: "Rectangle", label: "Rectangle" },
@@ -176,6 +185,8 @@ export const elementHierarchy: Record<string, NameLabel[]> = {
     "Misc": [
         { name: "TwoComplement", label: "Two Complement" },
         { name: "Flag", label: "Flag" },
+        { name: "Comparator", label: "Comparator" },
+        { name: "PullResistor", label: "Pull Resistor" },
         { name: "Splitter", label: "Splitter" },
         { name: "Adder", label: "Adder" },
         { name: "ALU", label: "ALU(Arithmetic and Logical Unit)" },

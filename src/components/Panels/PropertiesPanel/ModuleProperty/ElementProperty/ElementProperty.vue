@@ -107,6 +107,14 @@
                 {{ obj[name] }}
             </textarea>
         </p>
+        <DropdownSelect
+        v-if="value.type === 'dropdown'"
+        :dropdown-array="value.dropdownArray"
+        :property-name="value.func"
+        :property-value="value.dropdownArray[0]"
+        :property-input-name="value.name"
+        :property-input-id="value.name"
+    />
     </div>
 </template>
 
