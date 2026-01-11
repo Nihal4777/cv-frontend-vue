@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/simulatorvue/v0/*"
-  to = "/simulatorvue/v0/index-cv.html"
+  to = "/simulatorvue/v0/index.html"
   status = 200
 
 [[redirects]]
@@ -19,5 +19,5 @@
 
 [[redirects]]
   from = "/simulatorvue/*"
-  to = "/simulatorvue/v0/index-cv.html"
+  to = "/simulatorvue/v0/index.html"
   status = 200
